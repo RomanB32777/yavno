@@ -1,0 +1,30 @@
+@import 'styles/variables.module';
+
+.header {
+	max-width: $layout-width;
+	margin: 0 auto;
+	padding-inline: $page-padding;
+}
+
+.contentContainer {
+	width: 100%;
+}
+
+.menuIcon {
+	position: absolute;
+	z-index: 1;
+	right: $page-mobile-padding;
+	cursor: pointer;
+}
+
+@media (width >= 992px) {
+	.menuIcon {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		padding-inline: $page-mobile-padding;
+	}
+}

@@ -1,0 +1,97 @@
+@import 'styles/variables.module';
+
+.content {
+	padding: 160px 0 160px $page-padding;
+}
+
+.title {
+	margin-bottom: 30px;
+	font-size: 50px;
+	line-height: 60px;
+}
+
+.button {
+	margin-top: 40px;
+}
+
+.imageWrapper {
+	&.dashboard {
+		top: 15%;
+		right: 0;
+		width: 550px;
+	}
+
+	&.mobile {
+		top: 30%;
+		left: 10%;
+		width: 260px;
+	}
+
+	&.circles {
+		top: 0;
+		right: 0;
+		width: 550px;
+	}
+}
+
+.gradientPink {
+	top: -150px;
+	left: 50%;
+	width: 553px;
+	height: 199px;
+	background: #ce00ff;
+	filter: blur(200px);
+	opacity: 0.3;
+}
+
+.gradientBlue {
+	right: -100px;
+	bottom: 0;
+	width: 364px;
+	height: 314px;
+	background: #1b9cfc;
+	filter: blur(200px);
+	opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+	.banner {
+		margin-bottom: 30px;
+
+		.images {
+			height: 350px;
+		}
+	}
+
+	.content {
+		padding: 60px $page-mobile-padding 0;
+	}
+
+	.title {
+		margin-bottom: 14px;
+		font-size: 28px;
+		line-height: 34px;
+	}
+
+	.button {
+		margin-top: 20px;
+	}
+
+	.imageWrapper {
+		&.dashboard {
+			top: 0;
+			right: 30px;
+			width: 350px;
+		}
+
+		&.mobile {
+			bottom: 0;
+			left: 0;
+			width: 150px;
+		}
+
+		&.circles {
+			display: none;
+		}
+	}
+}

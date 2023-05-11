@@ -1,0 +1,103 @@
+@import 'styles/variables.module';
+
+.faq {
+	padding: 0 calc($page-padding * 2) 100px;
+}
+
+.title {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.list {
+	background-color: transparent;
+}
+
+.item,
+.itemDescription {
+	font-family: $inter-font;
+}
+
+.item {
+	display: block;
+	padding: 15px 0;
+	color: $grey-color;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.itemDescription {
+	margin-bottom: 25px;
+	color: #747986;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.arrow {
+	margin-top: 35px;
+	transition: all 0.3s;
+
+	&.isActive {
+		transform: rotate(180deg);
+	}
+}
+
+.button {
+	margin: 50px auto 0;
+}
+
+.gradientPink {
+	right: -300px;
+	bottom: 0;
+	width: 600px;
+	height: 400px;
+	background: rgb(206 0 255 / 40%);
+	filter: blur(250px);
+	opacity: 0.3;
+}
+
+.gradientBlue {
+	top: 250px;
+	left: -320px;
+	width: 450px;
+	height: 200px;
+	background: rgb(27 156 252 / 50%);
+	filter: blur(150px);
+	opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+	.faq {
+		padding: 0 $page-mobile-padding 60px;
+	}
+
+	.title {
+		margin-bottom: 30px;
+		text-align: left;
+	}
+
+	.item {
+		padding: 5px 0;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.itemDescription {
+		margin-bottom: 15px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.arrow {
+		margin-top: 15px;
+	}
+
+	.button {
+		margin: 30px 0 0;
+	}
+
+	.gradientPink,
+	.gradientBlue {
+		display: none;
+	}
+}

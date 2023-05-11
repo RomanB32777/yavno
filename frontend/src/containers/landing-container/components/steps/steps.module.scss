@@ -1,0 +1,88 @@
+@import 'styles/variables.module';
+
+.steps {
+	padding: 0 $page-padding;
+}
+
+.content {
+	.title {
+		margin-bottom: 50px;
+		text-align: center;
+	}
+}
+
+.step {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.number,
+.description {
+	font-family: $inter-font;
+	text-align: center;
+}
+
+.number {
+	padding: 10px 23.5px;
+	border-radius: 50%;
+	margin-bottom: 15px;
+	background: $white-color;
+	box-shadow: $shadow;
+	color: $grey-light-color;
+	filter: drop-shadow(0 4px 60px rgb(0 10 50 / 10%));
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 48px;
+}
+
+.description {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+}
+
+.line {
+	position: absolute;
+	top: 30px;
+	right: -90px;
+	filter: brightness(0.75);
+}
+
+@media screen and (max-width: 768px) {
+	.steps {
+		padding: 0 $page-mobile-padding;
+	}
+
+	.content {
+		.title {
+			margin-bottom: 30px;
+			text-align: left;
+		}
+	}
+
+	.step {
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+
+	.description {
+		margin-left: 15px;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: left;
+	}
+
+	.number {
+		padding: 10px 17px;
+		margin-bottom: 0;
+		font-size: 28px;
+		line-height: 34px;
+	}
+
+	.line {
+		display: none;
+	}
+}

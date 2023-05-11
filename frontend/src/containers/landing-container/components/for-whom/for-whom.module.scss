@@ -1,0 +1,83 @@
+@import 'styles/variables.module';
+
+.forWhom {
+	padding: 100px $page-padding;
+}
+
+.title {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	border-radius: 120px;
+	background: $white-color;
+	box-shadow: $shadow;
+}
+
+.description {
+	margin-left: 20px;
+	color: $grey-color;
+	font-family: $inter-font;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.image {
+	border-radius: 50%;
+}
+
+.gradientPink {
+	bottom: -400px;
+	left: -250px;
+	width: 450px;
+	height: 380px;
+	background: rgb(206 0 255 / 40%);
+	filter: blur(150px);
+	opacity: 0.2;
+}
+
+.gradientBlue {
+	top: 0;
+	right: -200px;
+	width: 300px;
+	height: 180px;
+	background: #1b9cfc;
+	filter: blur(200px);
+	opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+	.forWhom {
+		padding: 60px $page-mobile-padding;
+	}
+
+	.title {
+		margin-bottom: 20px;
+		text-align: left;
+	}
+
+	.item {
+		padding: 5px;
+		padding-right: 10px;
+
+		img {
+			width: 70px;
+		}
+	}
+
+	.description {
+		margin-left: 10px;
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.gradientPink,
+	.gradientBlue {
+		display: none;
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"trailingComma": "es5",
+	"printWidth": 100,
+	"semi": false,
+	"useTabs": true,
+	"tabWidth": 2,
+	"singleQuote": true,
+	"importOrder": [
+		"^react",
+		"^next",
+		"<THIRD_PARTY_MODULES>",
+		"^containers/(?!.*(?:consts|.scss|.types|.interface)$)(.*)$",
+		"^components/(.*)$",
+		"^../(?!.*.scss$)(.*)$",
+		"^./(?!.*(?:consts|.scss|.types|.interface)$)(.*)$",
+		"^hooks/(.*)$",
+		"^store",
+		"^store/(.*)$",
+		"^utils",
+		"^(containers|providers)/(.*)consts$",
+		"^consts",
+		"^./(.*)consts$",
+		"^./(.*)(.interface|.types)$",
+		"^containers/(.*)types$",
+		"^types",
+		"^styles/(.*)$",
+		"(.scss)$"
+	],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true
+}

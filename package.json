@@ -1,0 +1,34 @@
+{
+  "name": "yavno",
+  "version": "1.1.0",
+  "description": "",
+  "scripts": {
+    "prepare": "husky install",
+    "frontend": "npm start --prefix frontend",
+    "frontend:dev": "npm run dev --prefix frontend",
+    "commit": "git-cz"
+  },
+  "author": "Roman <e228ea@gmail.com>",
+  "license": "ISC",
+  "validate-branch-name": {
+    "pattern": "^(master|main|develop|production){1}$|^(feature|fix|hotfix|release)/.+$"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "@commitlint/cz-commitlint": "^17.5.0",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "validate-branch-name": "^1.3.0"
+  }
+}

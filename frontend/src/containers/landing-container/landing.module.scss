@@ -1,0 +1,108 @@
+@import 'styles/variables.module';
+
+.landing {
+	overflow-x: hidden;
+
+	.button {
+		padding: 11.5px 20px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 27px;
+	}
+}
+
+.block {
+	position: relative;
+	max-width: $layout-width;
+	margin: 0 auto;
+}
+
+.title,
+.description,
+.listItem {
+	font-family: $inter-font;
+}
+
+.title {
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 63px;
+}
+
+.description {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.primary {
+	color: $primary-color;
+}
+
+.images {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.imageWrapper {
+	position: absolute;
+	width: 100%;
+
+	.image {
+		position: relative !important;
+		width: 100% !important;
+		height: unset !important;
+		object-fit: contain;
+
+		&.animated {
+			transition: transform 0.5s;
+
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+
+.listItem {
+	display: flex;
+	align-items: baseline;
+	margin-bottom: 14px;
+	color: $grey-color;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&::before {
+		display: block;
+		content: '';
+	}
+}
+
+.gradient {
+	position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+	.landing {
+		.button {
+			font-size: 16px;
+			line-height: 24px;
+		}
+	}
+
+	.title {
+		font-size: 28px;
+		line-height: 34px;
+	}
+
+	.description {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}

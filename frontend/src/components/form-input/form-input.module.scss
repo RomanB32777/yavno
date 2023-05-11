@@ -1,0 +1,53 @@
+@import 'styles/variables.module';
+
+.formInput {
+	width: 100%;
+}
+
+.alignCenter {
+	display: flex;
+	align-items: center;
+}
+
+.label,
+.error,
+.description {
+	font-family: $inter-font;
+}
+
+.label,
+.error {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+.label {
+	margin-bottom: 5px;
+	color: $grey-color;
+}
+
+.error {
+	margin-top: 5px;
+	color: $red-color;
+}
+
+.input {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.isNotValid {
+	border: 1px solid $red-color;
+}
+
+.description {
+	margin-top: 10px;
+	margin-bottom: 0;
+	color: $grey-color;
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 22px;
+}

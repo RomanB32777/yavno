@@ -1,0 +1,122 @@
+@import 'styles/variables.module';
+
+.formWrapper {
+	position: relative;
+	padding: 100px 0;
+	background-color: #eef4fa;
+}
+
+.content {
+	padding-left: $page-padding;
+
+	.title {
+		margin-bottom: 40px;
+		font-size: 24px;
+		line-height: 36px;
+	}
+}
+
+.inputWrapper {
+	margin-bottom: 10px;
+}
+
+.button {
+	margin-top: 30px;
+}
+
+.imageWrapper {
+	&.hotel {
+		top: 0;
+		left: 0;
+		width: 500px;
+	}
+
+	&.sea {
+		right: 17.5%;
+		bottom: -5%;
+		width: 350px;
+	}
+
+	&.lines {
+		top: 0;
+		right: 15%;
+		width: 400px;
+	}
+
+	&.diagram {
+		bottom: 5%;
+		left: 5%;
+		width: 150px;
+	}
+}
+
+.modal {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.modalIcon,
+.modalButton {
+	margin: 0 auto;
+}
+
+.modalButton {
+	padding: 11.5px 35px;
+	margin-top: 30px;
+}
+
+.modalTitle,
+.modalDescription {
+	font-family: $inter-font;
+}
+
+.modalTitle {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+.modalDescription {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.modalGradientBlue {
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 150px;
+	background: #1b9cfc;
+	filter: blur(100px);
+	opacity: 0.5;
+}
+
+.modalGradientPink {
+	right: 0;
+	bottom: 0;
+	width: 100px;
+	height: 100px;
+	background: #ce00ff;
+	filter: blur(100px);
+	opacity: 0.5;
+}
+
+@media screen and (max-width: 768px) {
+	.formWrapper {
+		padding: 35px 0;
+	}
+
+	.content {
+		padding: 0 $page-mobile-padding;
+	}
+
+	.title {
+		margin-bottom: 20px;
+	}
+
+	.button {
+		margin-top: 20px;
+	}
+}

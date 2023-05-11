@@ -1,0 +1,17 @@
+$primary-color: #1b9cfc;
+$white-color: #fff;
+$black-color: #000;
+$grey-color: #252b42;
+$grey-light-color: #a8c5da;
+$red-color: #eb0932;
+$page-padding: 120px;
+$layout-width: 1560px;
+$page-mobile-padding: 16px;
+$shadow: 0 4px 60px rgb(42 54 98 / 10%);
+$inter-font: var(--inter-font), sans-serif;
+
+:export {
+	/* stylelint-disable property-no-unknown */
+	primaryColor: $primary-color;
+	/* stylelint-enable */
+}
