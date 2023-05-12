@@ -7,6 +7,7 @@ import Image from 'next/image'
 import { Col, Row } from 'antd'
 import axios, { AxiosError } from 'axios'
 import clsx from 'clsx'
+import { motion } from 'framer-motion'
 
 import BaseButton from 'components/base-button/base-button'
 import FormInput from 'components/form-input/form-input'
@@ -155,6 +156,11 @@ const Form = () => {
 										key={name}
 										className={clsx(mainStyles.imageWrapper, styles.imageWrapper, styles[name])}
 									>
+										{/* <motion.div
+											initial={{ transform: 'scale(1)' }}
+											whileInView={{ transform: 'scale(1.05)' }}
+											viewport={{ once: true, amount: 0.8 }}
+										> */}
 										<Image
 											src={`${landingImagePath}/form/${name}.png`}
 											className={clsx(mainStyles.image, {
@@ -163,6 +169,7 @@ const Form = () => {
 											alt={name}
 											fill
 										/>
+										{/* </motion.div> */}
 									</div>
 								))}
 						</div>
@@ -179,7 +186,7 @@ const Form = () => {
 						className={styles.modalIcon}
 						alt="success"
 					/>
-					<h3 className={styles.modalTitle}>Заголовок в одну строку</h3>
+					<h3 className={styles.modalTitle}>Ваша заявка отправлена</h3>
 					<p className={styles.modalDescription}>
 						Ваша заявка отправлена. Менеджер свяжется с вами в ближайшее время.
 					</p>

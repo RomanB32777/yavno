@@ -14,9 +14,10 @@ const Services = () => {
 			<div className={styles.list}>
 				<Carousel
 					autoplay
-					dots={false}
 					slidesToShow={1}
 					speed={1000}
+					autoplaySpeed={4000}
+					dots={false}
 					draggable={false}
 					swipeToSlide={false}
 					variableWidth
