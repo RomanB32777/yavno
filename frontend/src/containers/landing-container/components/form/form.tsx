@@ -33,7 +33,7 @@ const sendNewRow = async (formData: IForm) => {
 }
 
 const Form = () => {
-	const [isOpenModal, setIsOpenModal] = useState(true)
+	const [isOpenModal, setIsOpenModal] = useState(false)
 	const {
 		reset,
 		handleSubmit,
@@ -176,7 +176,7 @@ const Form = () => {
 					</Col>
 				</Row>
 			</div>
-			<Modal open={isOpenModal} onCancel={modalHandler} centered noPadding>
+			<Modal open={isOpenModal} onCancel={modalHandler} noPadding centered>
 				<div className={styles.modal}>
 					<div className={clsx(mainStyles.gradient, styles.modalGradientBlue)} />
 					<Image

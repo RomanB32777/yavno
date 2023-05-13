@@ -31,7 +31,13 @@ const Footer = () => {
 				</div>
 				<div className={styles.socialNetworks}>
 					{socialNetworks.map(({ name, link, width, height }) => (
-						<a key={name} className={styles.socialNetwork} href={link} target="_blank">
+						<a
+							key={name}
+							className={styles.socialNetwork}
+							href={link}
+							target="_blank"
+							rel="noreferrer"
+						>
 							<Image
 								src={`${staticUrl}/socials/${name}.svg`}
 								alt={name}
