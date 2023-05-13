@@ -22,27 +22,27 @@ export const menu: Record<Exclude<MenuItemKeys, 'form'>, React.ReactNode> = {
 
 export const bannerImages: IImageBase[] = [
 	{ name: 'circles', width: 525, height: 525 },
-	{ name: 'dashboard', width: 550, height: 420, animated: true },
+	{ name: 'dashboard2', width: 550, height: 420, animated: true },
 	{ name: 'mobile', width: 250, height: 360, animated: true },
 ]
 
 export const services: IImageBase[] = [
-	{ name: 'yandex', width: 281, height: 61 },
-	{ name: 'tripadvisor', width: 210, height: 61 },
-	{ name: 'google', width: 243, height: 61 },
-	{ name: 'ostrovok', width: 237, height: 61 },
-	{ name: 'onetwotrip', width: 57, height: 61 },
+	{ name: 'yandex2', width: 281, height: 61 },
+	{ name: 'tripadvisor2', width: 210, height: 61 },
+	{ name: 'google2', width: 243, height: 61 },
+	{ name: 'ostrovok2', width: 237, height: 61 },
+	{ name: 'onetwotrip2', width: 57, height: 61 },
 ]
 
 export const whatIsImages: IImageBase[] = [
-	{ name: 'photo', width: 562, height: 360 },
+	{ name: 'photo2', width: 562, height: 360 },
 	{ name: 'cards', width: 480, height: 275, animated: true },
 	{ name: 'diagram', width: 146, height: 146, animated: true },
 ]
 
 export const advantagesImages: IImageBase[] = [
 	{ name: 'circles', width: 525, height: 525 },
-	{ name: 'photo', width: 562, height: 360 },
+	{ name: 'photo2', width: 562, height: 360 },
 	{ name: 'photoMobile', width: 562, height: 360 },
 	{ name: 'feedback', width: 480, height: 275, animated: true },
 	{ name: 'dashboard', width: 146, height: 146, animated: true },
@@ -59,7 +59,7 @@ export const advantages = [
 ]
 
 export const resultsImages: IImageBase[] = [
-	{ name: 'photo', width: 562, height: 360 },
+	{ name: 'photo2', width: 562, height: 360 },
 	{ name: 'photoMobile', width: 562, height: 360 },
 	{ name: 'feedback', width: 480, height: 275, animated: true },
 	{ name: 'dashboard', width: 146, height: 146, animated: true },

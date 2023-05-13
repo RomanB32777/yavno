@@ -33,7 +33,7 @@ const sendNewRow = async (formData: IForm) => {
 }
 
 const Form = () => {
-	const [isOpenModal, setIsOpenModal] = useState(false)
+	const [isOpenModal, setIsOpenModal] = useState(true)
 	const {
 		reset,
 		handleSubmit,
@@ -187,9 +187,7 @@ const Form = () => {
 						alt="success"
 					/>
 					<h3 className={styles.modalTitle}>Ваша заявка отправлена</h3>
-					<p className={styles.modalDescription}>
-						Ваша заявка отправлена. Менеджер свяжется с вами в ближайшее время.
-					</p>
+					<p className={styles.modalDescription}>Менеджер свяжется с вами в ближайшее время.</p>
 					<BaseButton
 						title="Ок"
 						onClick={modalHandler}

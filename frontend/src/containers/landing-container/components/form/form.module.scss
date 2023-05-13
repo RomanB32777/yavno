@@ -63,6 +63,7 @@
 .modalButton {
 	padding: 11.5px 35px;
 	margin-top: 30px;
+	font-size: 16px;
 }
 
 .modalTitle,
@@ -118,5 +119,11 @@
 
 	.button {
 		margin-top: 20px;
+	}
+
+	.modalButton {
+		padding: 5px 20px;
+		margin-top: 20px;
+		font-size: 16px;
 	}
 }
