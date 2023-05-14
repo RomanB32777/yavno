@@ -16,11 +16,19 @@ const Services = () => {
 					autoplay
 					slidesToShow={1}
 					speed={1000}
-					autoplaySpeed={4000}
+					autoplaySpeed={2000}
 					dots={false}
 					draggable={false}
 					swipeToSlide={false}
 					variableWidth
+					responsive={[
+						{
+							breakpoint: 1200,
+							settings: {
+								autoplaySpeed: 4000,
+							},
+						},
+					]}
 				>
 					{services.map(({ name }, index) => (
 						<div className={styles.service} key={index}>

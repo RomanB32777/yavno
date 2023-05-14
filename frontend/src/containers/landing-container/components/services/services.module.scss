@@ -17,6 +17,12 @@
 	object-fit: none;
 }
 
+@media screen and (min-width: $layout-width) {
+	.service {
+		height: 130px;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.services {
 		padding: 0 $page-mobile-padding;
@@ -25,11 +31,5 @@
 	.service {
 		height: 80px;
 		margin-right: 20px;
-	}
-}
-
-@media (width >= $layout-width) {
-	.service {
-		height: 130px;
 	}
 }
